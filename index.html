@@ -12,14 +12,82 @@
 
 <body>
 
+    <form class="form js-speaker-form">
+        <div class="form-fieled">
+            <label for="name">І'мя</label>
+            <input type="text" name="user-name" id="name" placeholder="Оксана">
+        </div>
 
-    <!-- Вводимо ім'я телефон і пошту -->
-    <!-- Вибираємо тему на яку будемо обити доповідь -->
-    <!-- Вибираємо свій рівень розробника -->
-    <!-- Вибираємо час доповіді  https://caniuse.com/ -->
-    <!-- Загружаємо презентацію -->
-    <!-- Відправляємо коментар -->
-    <!-- Підтвердження політики конфіденційності -->
+        <div class="form-fieled">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" placeholder="+380 00-00-000">
+        </div>
+
+        <div class="form-fieled">
+            <label for="email">Пошта</label>
+            <input type="email" name="email" id="email" placeholder="ny@mail.com">
+        </div>
+
+
+
+        <div role="group" class="group">
+            <h2 class="group-title">Тема доповіді</h2>
+            <ul class="topic-options">
+                <li>
+                    <input type="checkbox" name="topic" value="html" id="html">
+                    <label for="html">html</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="topic" value="css" id="css">
+                    <label for="css">css</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="topic" value="js" id="js">
+                    <label for="js">js</label>
+                </li>
+            </ul>
+        </div>
+
+
+        <div role="group" class="group">
+            <h2 class="group-title">Рівень експертизи</h2>
+            <ul class="expirience-optios">
+                <li><input type="radio" name="expirience" value="junior" id="junior">
+                    <label for="junior">Junior</label>
+                </li>
+                <li><input type="radio" name="expirience" value="middle" id="middle">
+                    <label for="middle">Middle</label>
+                </li>
+                <li><input type="radio" name="expirience" value="senior" id="senior">
+                    <label for="senior">Senior</label>
+                </li>
+            </ul>
+
+        </div>
+        <div class="form-fieled">
+            <label for="date">Дата і час доповіді</label>
+            <input type="datetime-local" name="date" id="date" min="2022-12-04T12:30" max="2022-12-04T17:30">
+        </div>
+
+        <div class="form-fieled">
+            <label for="pdf">Завантажити презентацію</label>
+            <input type="file" name="pdf" id="pdf">
+        </div>
+
+
+        <div class="form-fieled">
+            <label for="coment">Залишити коментар</label>
+            <textarea name="coment" id="coment" rows="10" placeholder="Уточніть деталі доповіді"></textarea>
+        </div>
+        <div class="form-fieled">
+            <input type="checkbox" name="policy" id="policy">
+            <label for="policy">Погоджуюсь</label>
+        </div>
+
+        <br>
+        <button type="submit">Залишити заявку</button>
+
+    </form>
 
     <script>
         (() => {

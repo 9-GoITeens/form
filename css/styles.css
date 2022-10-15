@@ -9,3 +9,76 @@ body {
     color: #2a2a2a;
 }
 
+textarea{
+    resize: none;
+}
+
+.form{
+    width: 600px;
+    outline: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.form-fieled{
+    outline: 1px solid blue;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-fieled input{
+margin: 0;
+padding: 10px 20px;
+border-radius: 3px;
+border: 1px solid #2a2a2a;
+}
+
+.form-fieled label{
+    margin-bottom: 5px;
+}
+
+.form-fieled input::placeholder{
+    color: blueviolet;
+}
+
+.group{
+    margin-bottom: 20px;
+}
+
+.group-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.topic-options,
+.expirience-optios{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* .topic-options input[type="checkbox"]{
+    width: 40px;
+    height: 20px;
+} */
+.topic-options li{
+    display: flex;
+    align-items: center;
+}
+
+.topic-options label{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.date {
+    border-width: 2px;
+    border-radius: 4px;
+    padding: 20px 40px;
+}
+
+.comment {
+    padding: 8px;
+}
